@@ -1,4 +1,5 @@
 <%= form_for (@user) do |f| %>
+<%= render 'partial/errors' %>
   <%= f.label :username, "Username" %>
   <%= f.text_field :username , placeholder: "#{@user[:username]}" %>
   <br>
