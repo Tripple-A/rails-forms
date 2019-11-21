@@ -1,4 +1,9 @@
 <%= form_for (@user) do |f| %>
+<% if flash[:success] %>
+    <h2 class="notice"><%= flash[:success] %></h2>
+    <% else %>
+    <h2 class="errors"><%= flash[:failure] %></h2>
+ <% end %>
 <%= render 'partial/errors' %>
   <%= f.label :username, "Username" %>
   <%= f.text_field :username , placeholder: "#{@user[:username]}" %>
