@@ -5,6 +5,7 @@ AllCops:
     - "config/**/*"
     - "Guardfile"
     - "Rakefile"
+    -
   DisplayCopNames: true
 
 Metrics/LineLength:

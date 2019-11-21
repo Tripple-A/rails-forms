@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class UsersController < ApplicationController
   def new
     @user = User.new
@@ -17,13 +19,13 @@ class UsersController < ApplicationController
     params.require(:user).permit(:username, :email, :password)
   end
 
-  def edit 
+  def edit
     @user = User.find(
-    params[:id]
+      params[:id]
     )
   end
 
-  def update 
+  def update
     @user = User.find(params[:id])
     @user.save
     if @user.save
