@@ -1,13 +1,13 @@
-<%= form_for @user do |f| %>
+<%= form_for (@user) do |f| %>
 <%= render 'partial/errors' %>
   <%= f.label :username, "Username" %>
-  <%= f.text_field :username , placeholder: 'Izaias' %>
+  <%= f.text_field :username , placeholder: "#{@user[:username]}" %>
   <br>
   <%= f.label :email, "Email" %>
-  <%= f.text_field :email , placeholder: 'name"example.com'%>
+  <%= f.text_field :email , placeholder: "#{@user[:email]}"%>
   <br>  
   <%= f.label :password, "Password" %>
   <%= f.password_field :password %>
   <br>
-  <%= f.submit %>
+  <%= f.submit 'EDIT' %>
 <% end %>
