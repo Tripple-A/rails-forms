@@ -3,6 +3,9 @@ AllCops:
     - "bin/*"
     - "db/**/*"
     - "config/**/*"
+    - "node_modules/**/*"
+    - "test/**/*"
+    - "Gemfile"
     - "Guardfile"
     - "Rakefile"
   DisplayCopNames: true
