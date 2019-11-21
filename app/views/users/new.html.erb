@@ -1,12 +1,12 @@
-<%= form_tag( 'path' , method: "post") do %>
-  <%= label_tag (:username, "Username" %>
-  <%= text_field_tag (:username) %>
-
-  <%= label_tag (:email, "Email") %>
-  <%= email_field_tag (:email) %>
-
-  <%= label_tag (:password, "Password") %>
-  <%= password_field_tag (:password) %>
-
+<%= form_for @user do |f| %>
+  <%= f.label :username, "Username" %>
+  <%= f.text_field :username %>
+  <br>
+  <%= f.label :email, "Email" %>
+  <%= f.text_field :email %>
+  <br>  
+  <%= f.label :password, "Password" %>
+  <%= f.password_field :password %>
+  <br>
   <%= f.submit %>
 <% end %>
