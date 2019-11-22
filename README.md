@@ -1,24 +1,25 @@
-# README
+# Working with Rails Forms
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project will teach you the multiple ways to build a form in rails that can send parameters to a controller so that it can build an instance of a model with those parameters.
 
-Things you may want to cover:
+# Instructions
 
-* Ruby version
+ 1. Download or clone this repository
 
-* System dependencies
+ 2. Navigate into the folder
 
-* Configuration
+ 3. Execute the rails application with the command `rails s`
+          
+ 3. Play around with the New Users form creation and also the Edit form.
 
-* Database creation
+# Built With
+* Ruby v2.6.3+
+* `rvm`
+* VsCode
+* Ubuntu
+* Love and passion for code â¤ï¸
 
-* Database initialization
+# Authors
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+🇧🇷 [Izaias Neto](https://www.github.com/izaiasneto4)
+🇳🇬 [Abiodun Ajibade](https://github.com/Tripple-A/)
